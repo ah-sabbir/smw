@@ -1,5 +1,9 @@
 import React from 'react';
 import '../components/navbar.css';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import logoBlack from '@/public/images/logo/Logo black.png';
 
 export const Navbar = () => {
   return (
@@ -8,18 +12,9 @@ export const Navbar = () => {
 
         {/* <!-- Logo --> */}
         <div className="logo">
-          <a className="navbar-brand" href="./index.html">
-            <div
-              style={{
-                width: '32px',
-                height: '32px',
-                backgroundImage: 'url(./images/logo/Logo black.png)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}
-              aria-label="Logo"
-            />
-          </a>
+          <Link className="navbar-brand" href="#">
+            <div className={`w-8 h-8 bg-cover bg-center bg-logo-brand p-3`}></div>
+          </Link>
         </div>
 
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'logo-brand': "url('/images/logo/Logo-black.png')",
+        'logo-brand-black': "url('/images/logo/Logo-black.png')",
+        'logo-brand-white': "url('/images/logo/Logo-white.png')",
       },
       colors: {
         background: "var(--background)",

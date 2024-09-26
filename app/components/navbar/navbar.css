@@ -1,10 +1,10 @@
-.navbar{
+/* .navbar{
     margin: 0;
     height: 95px;
     width: 100%;
     z-index: 99999999999999;
     background: var(--mf-white);
-}
+} */
 ul.navbar-nav {
     transform: translateX(50%);
 }

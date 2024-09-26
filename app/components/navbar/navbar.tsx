@@ -1,43 +1,48 @@
-import React from 'react';
-import '../components/navbar.css';
+'use client'
+import React, { useState } from 'react';
+import './navbar.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import logoBlack from '@/public/images/logo/Logo black.png';
+import logoBlack from '@/public/images/logo/Logo-black.png';
 
 export const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid container">
+    <nav className="m-0 h-[95px] w-full z-[99999999999] bg-white navbar-expand-lg">
+      <div className="w-full max-w-[1320px] mx-auto px-4">
 
         {/* <!-- Logo --> */}
-        <div className="logo">
+        <div className="logo max-w-40 m-5">
           <Link className="navbar-brand" href="#">
-            <div className={`w-8 h-8 bg-cover bg-center bg-logo-brand p-3`}></div>
+            {/* <div className={`w-8 h-8 bg-cover bg-center bg-logo-brand-black`}></div> */}
+            <Image src={logoBlack} alt='logo' className='w-full h-auto' quality={100}/>
           </Link>
         </div>
-
+        
+        {/* Toggle Button */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        
+
+         {/* The collapsible content */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
             <li className="nav-item">
-              <a className="nav-link active" href="./index.html" role="button">
+              <a className="nav-link active" href="#" role="button">
                 Home
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="./pages/aboutus.html" role="button">
+              <a className="nav-link" href="/about" role="button">
                 About us
               </a>
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="./pages/allservice.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a className="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Services
                 <i className="fa-solid fa-chevron-down" id="btn"></i>
               </a>
@@ -46,8 +51,8 @@ export const Navbar = () => {
                   <h3>All Services</h3>
                   <p>Delivering Expert, reliable maintenance services</p>
                   <div className="button_div">
-                    <a className="button" href="./pages/allservice.html">See all services</a>
-                    <a className="button butto_arrow" href="./pages/allservice.html"><i className="fa-solid fa-arrow-right"></i></a>
+                    <a className="button" href="/services">See all services</a>
+                    <a className="button butto_arrow" href="/services"><i className="fa-solid fa-arrow-right"></i></a>
                   </div>
                 </li>
 

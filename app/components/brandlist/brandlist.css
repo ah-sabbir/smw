@@ -1,0 +1,26 @@
+/* brand list */
+
+#brand_list{
+    padding: 70px 0;
+}
+
+#brand_list .container{
+    padding: 47px 0;
+    max-width: 1073px;
+    width: 100%;
+    margin: 0 auto;
+}
+#brand_list .container .listing{
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+
+#brand_list .container .brandsecond{
+    padding: 32px 12%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+/* brand list */

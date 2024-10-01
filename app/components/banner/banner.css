@@ -1,0 +1,112 @@
+/* variable */
+:root{
+    /* Font family */
+  --mf-font-heading: 'SF Pro Display', sans-serif; 
+  --mf-font-body: 'SF Pro Display', sans-serif;    
+  /* Font family */
+
+    /* colors */
+    --mf-fade-white: #F1F1F1;
+    --mf-main-green-default: #1c7d9b;
+    --mf-paragraph-1: #ACABC3;
+    --mf-paragraph-2: #B7BACB;
+    --mf-paragraph-3: #B8B8DC;
+    --mf-sub-heading-blue: #0fbbf0;
+    --mf-heading-deep-blue: #1A0B5B;
+    --mf-black: #000;
+    --mf-white: #ffffff;
+    --mf-violet: #7E33E0;
+    --mf-blue: #0d6efd;
+    --mf-purple: #6f42c1;
+    --mf-red: #f83600;
+    --mf-orange: #df6812;
+    --mf-yellow: #ffc107;
+    --mf-green: #198754;
+    /* colors */
+
+    /* font weight */
+    --m-f-weight-regular: 400;
+    --m-f-weight-sem-bold: 600;
+    --m-f-weight-bold: 700;
+    --m-f-weight-ex-bold: 800;
+    /* font weight */
+}
+/* variable */
+
+/* button design */
+.button{
+    padding: 0;
+}
+.button{
+ background: var(--mf-main-green-default);
+ padding: 10px 12px;
+ border-radius: 50px;
+ color: var(--mf-white);
+ font-family: var(--mf-font-body);
+ font-size: 14px;
+ font-style: normal;
+ font-weight: var(--m-f-weight-sem-bold);
+ line-height: normal;
+ letter-spacing: 0.34px;
+ transition: .4s;
+ -webkit-transition: .4s;
+ -moz-transition: .4s;
+  -ms-transition: .4s; 
+ -o-transition: .4s;
+}
+.button:hover{
+ background: #000;
+ color: #FFF;
+}
+.button_div {
+    display: flex;
+}
+.butto_arrow {
+    transform: rotate(-45deg);
+}
+.butto_arrow:hover {
+    transform: rotate(0deg);
+}
+
+
+/* banner */
+.container.banner{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 32px;
+    padding: 15px;
+}
+.container.banner{ 
+    background: #1c404b;
+    height: 530px;
+    width: 100%;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    color: var(--mf-white);
+    font-size: 50px;
+}
+.container p{
+    color: var(--mf-fade-white);
+}
+
+.container .text {
+    padding: 50px;
+}
+
+.container .image img {
+    margin-bottom: -27%;
+}
+
+.container .image {
+    margin-right: 20px;
+}
+
+
+/* banner */

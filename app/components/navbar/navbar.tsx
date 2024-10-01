@@ -6,9 +6,11 @@ import "./navbar.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import logoBlack from '@/public/images/logo/Logo-black.png';
 import NavService from '../nav-service/navservice';
+import NavProject from '../nav-project/navproject';
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -49,9 +51,9 @@ export const Navbar = () => {
                     </Link> 
                 </li>
                 <li>
-                    <a href="#">
-                        Projects
-                    </a> 
+                    <Link href="#" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+                    Projects
+                    </Link>
                 </li>
                 <li>
                     <a href="#">
@@ -68,12 +70,12 @@ export const Navbar = () => {
 
          <div>
           <a href="tel:+97466325019" className="bg-[#1c7d9b] p-0 py-[10px] px-[12px] rounded-3xl text-white text-sm leading-normal not-italic tracking-[0.34px] transition duration-400 hover:bg-black hover:text-white flex items-center">
-            <i className="fa-solid fa-phone mr-[6px]"></i> +974 66325019
+            <i className="fa-solid fa-phone mr-[6px]"></i> <FontAwesomeIcon icon={faPhone} className="text-[#0fbbf0] mr-2" />+974 66325019
           </a>
         </div>
 
       <NavService isHover={isHover}/>
-
+      <NavProject isHover={isHover}/>
 
       </div>
     </nav>

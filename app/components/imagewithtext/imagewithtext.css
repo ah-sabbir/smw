@@ -1,3 +1,4 @@
+
 /* variable */
 :root{
     /* Font family */
@@ -70,7 +71,7 @@
 
 
 /* banner */
-.container.banner{
+.container{
     max-width: 1320px;
     margin: 0 auto;
     padding-left: 0;
@@ -78,35 +79,29 @@
     margin-top: 32px;
     padding: 15px;
 }
-.container.banner{ 
-    background: #1c404b;
-    height: 530px;
-    width: 100%;
-    border-radius: 24px;
+
+
+/* image with behind the scene section  */
+
+#image_with_text{
+
+    background-color: #F8FAFF;
+}
+#image_with_text .container{
+    padding: 70px 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    column-gap: 80px;
 }
 
-.container.banner h1{
-    color: var(--mf-white);
-    font-size: 50px;
-}
-.container.banner p{
-    color: var(--mf-fade-white);
-}
-
-.container.banner .text {
-    padding: 50px;
-}
-
-.container.banner .image img {
-    margin-bottom: -27%;
-}
-
-.container.banner .image {
-    margin-right: 20px;
+#image_with_text .container .service_point{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 10px;
+    margin-top: 20px;
 }
 
 
-/* banner */
+
+
+/* image with behind the scene section  */

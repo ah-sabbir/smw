@@ -4,6 +4,11 @@ import Navbar from "./components/navbar/navbar";
 import "./globals.css";
 import Banner from "./components/banner/banner";
 import BrandList from "./components/brandlist/brandlist";
+import ServiceSection from "./components/servicesection/servicesection";
+import ImageWithText from "./components/imagewithtext/imagewithtext";
+import ProjectSection from "./components/projectsection/projectsection";
+import CardSection from "./components/cardsection/cardsection";
+import Footer from "./components/footer/footer";
 
 const geistSans = localFont({
   src: "../public/fonts/GeistVF.woff",
@@ -36,6 +41,11 @@ export default function RootLayout({
         <Navbar/>
         <Banner/>
         <BrandList/>
+        <ServiceSection/>
+        <ImageWithText/>
+        <ProjectSection/>
+        <CardSection/>
+        <Footer/>
         {children}
       </body>
     </html>

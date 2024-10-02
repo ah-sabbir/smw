@@ -1,3 +1,4 @@
+
 /* variable */
 :root{
     /* Font family */
@@ -70,7 +71,7 @@
 
 
 /* banner */
-.container.banner{
+.container{
     max-width: 1320px;
     margin: 0 auto;
     padding-left: 0;
@@ -78,35 +79,82 @@
     margin-top: 32px;
     padding: 15px;
 }
-.container.banner{ 
-    background: #1c404b;
-    height: 530px;
-    width: 100%;
-    border-radius: 24px;
+
+
+/* project section */
+#project_section .container{
+    padding: 70px 0;
+}
+
+#project_section .subtitle{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+}
+#project_section .subtitle .text_div p{
+    width: 515px;
 }
 
-.container.banner h1{
-    color: var(--mf-white);
-    font-size: 50px;
-}
-.container.banner p{
-    color: var(--mf-fade-white);
+#project_section h3{
+    font-size: 30px;
 }
 
-.container.banner .text {
-    padding: 50px;
+#project_section .project_group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 24px;
+}
+#project_section .project_group P{
+    font-size: 13PX;
 }
 
-.container.banner .image img {
-    margin-bottom: -27%;
+#project_section .project_group .project_one,
+    #project_section .project_group .project_two,
+        #project_section .project_group .project_three{
+    height: 424px;
+    width: 424px;
+    margin-top: 32px;
 }
 
-.container.banner .image {
-    margin-right: 20px;
+
+
+
+
+#project_section .project_group .project_content {
+    width: 410px;
+    height: auto;
+    margin: 0 auto;
+    background: #ffffffc0;
+    padding: 10px;
+    border-radius: 10px;
+}
+#project_section .project_group .project_content svg{
+    height: 15PX;
+    width: auto;
 }
 
 
-/* banner */
+#project_section .project_group .project_one,
+    #project_section .project_group .project_two,
+        #project_section .project_group .project_three{
+            position: relative;
+}
+
+#project_section .project_group .project_one .project_content,
+    #project_section .project_group .project_two .project_content,
+        #project_section .project_group .project_three .project_content{
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+}
+
+
+#project_section .project_group .button_div {
+    margin-top: 12px !important;
+}
+
+#project_section .project_group .learn_btn{
+    width: 100%;
+    text-align: center;
+}
+/* project section */

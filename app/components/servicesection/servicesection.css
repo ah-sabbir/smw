@@ -1,0 +1,218 @@
+/* variable */
+:root{
+    /* Font family */
+  --mf-font-heading: 'SF Pro Display', sans-serif; 
+  --mf-font-body: 'SF Pro Display', sans-serif;    
+  /* Font family */
+
+    /* colors */
+    --mf-fade-white: #F1F1F1;
+    --mf-main-green-default: #1c7d9b;
+    --mf-paragraph-1: #ACABC3;
+    --mf-paragraph-2: #B7BACB;
+    --mf-paragraph-3: #B8B8DC;
+    --mf-sub-heading-blue: #0fbbf0;
+    --mf-heading-deep-blue: #1A0B5B;
+    --mf-black: #000;
+    --mf-white: #ffffff;
+    --mf-violet: #7E33E0;
+    --mf-blue: #0d6efd;
+    --mf-purple: #6f42c1;
+    --mf-red: #f83600;
+    --mf-orange: #df6812;
+    --mf-yellow: #ffc107;
+    --mf-green: #198754;
+    /* colors */
+
+    /* font weight */
+    --m-f-weight-regular: 400;
+    --m-f-weight-sem-bold: 600;
+    --m-f-weight-bold: 700;
+    --m-f-weight-ex-bold: 800;
+    /* font weight */
+}
+/* variable */
+
+/* button design */
+.button{
+    padding: 0;
+}
+.button{
+ background: var(--mf-main-green-default);
+ padding: 10px 12px;
+ border-radius: 50px;
+ color: var(--mf-white);
+ font-family: var(--mf-font-body);
+ font-size: 14px;
+ font-style: normal;
+ font-weight: var(--m-f-weight-sem-bold);
+ line-height: normal;
+ letter-spacing: 0.34px;
+ transition: .4s;
+ -webkit-transition: .4s;
+ -moz-transition: .4s;
+  -ms-transition: .4s; 
+ -o-transition: .4s;
+}
+.button:hover{
+ background: #000;
+ color: #FFF;
+}
+.button_div {
+    display: flex;
+}
+.butto_arrow {
+    transform: rotate(-45deg);
+}
+.butto_arrow:hover {
+    transform: rotate(0deg);
+}
+
+
+/* banner */
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 32px;
+    padding: 15px;
+}
+
+/* Service section */
+
+#service_section .container{
+    padding: 70px 0;
+}
+
+#service_section .subtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#service_section .subtitle p{
+    width: 515px;
+}
+
+#service_section h3{
+    font-size: 30px;
+}
+#service_section h4 {
+    margin-bottom: 10px;
+}
+#service_section p {
+    font-size: 16px;
+}
+
+#service_section .service_first{
+    display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 30px;
+  margin-top: 32px;
+}
+
+#service_section  .button_div {
+    margin-top: 10px !important;
+}
+
+#service_section .service_first .ac {
+    background: #EFF1FF;
+    width: 100%;
+    height: 430px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+#service_section .service_first .fridge {
+    background: #E7FFEF;
+    width: 100%;
+    height: 430px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#service_section .ac{
+    position: relative;
+}
+
+#service_section .ac .service_banner_image {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+
+#service_section .fridge{
+    position: relative;
+}
+
+#service_section .fridge .service_banner_image {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#service_section .service_second{
+    display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  column-gap: 30px;
+  margin-top: 32px;
+} 
+
+
+
+#service_section .service_second .ac {
+    background: #FFF7E2;
+    width: 100%;    
+    height: 430px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+#service_section .service_second .fridge {
+    background: #FFECFC;
+    width: 100%;
+    height: 430px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#service_section .service_second .all_serivices{
+    position: relative;
+}
+
+#service_section .service_second .all_serivices .service_group {
+    position: absolute;
+    right: 11px;
+    bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#service_section .service_second .all_serivices .service_group div img{
+    height: 94px;
+    width: 158px;
+    border-radius: 8px;
+}
+
+#service_section .service_second .all_serivices .service_group .more_services {
+    background: var(--mf-white);
+    height: 94px;
+    width: 158px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#service_section p{
+    color: #000 !important;
+}
+/* Service section */

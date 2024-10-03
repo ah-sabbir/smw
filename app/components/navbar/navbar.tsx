@@ -1,11 +1,11 @@
 'use client'
-import React, { useState } from 'react';
+import React from 'react'; //{ useState }
 import Link from 'next/link';
 import Image from 'next/image';
 import "./navbar.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+// import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import logoBlack from '@/public/images/logo/Logo-black.png';
@@ -13,11 +13,11 @@ import NavService from '../nav-service/navservice';
 import NavProject from '../nav-project/navproject';
 
 export const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isHover, setIsHover] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
+    // const [isHover, setIsHover] = useState(false);
 
-    const handleMouseOver = ()=>setIsHover(true)
-    const handleMouseLeave = ()=>setTimeout(()=>setIsHover(false),500)
+    // const handleMouseOver = ()=>setIsHover(true)
+    // const handleMouseLeave = ()=>setTimeout(()=>setIsHover(false),500)
 
 
   return (
@@ -46,12 +46,14 @@ export const Navbar = () => {
                     </a> 
                 </li>
                 <li>
-                    <Link href="#" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+                    <Link href="#" >
+                    {/* onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} */}
                         Services
                     </Link> 
                 </li>
                 <li>
-                    <Link href="#" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+                    <Link href="#" >
+                    {/* onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave} */}
                     Projects
                     </Link>
                 </li>
@@ -73,9 +75,10 @@ export const Navbar = () => {
             <i className="fa-solid fa-phone mr-[6px]"></i> <FontAwesomeIcon icon={faPhone} className="text-[#0fbbf0] mr-2" />+974 66325019
           </a>
         </div>
-
-      <NavService isHover={isHover}/>
-      <NavProject isHover={isHover}/>
+      {/* isHover={isHover} */}
+      <NavService />
+      {/* isHover={isHover} */}
+      <NavProject />
 
       </div>
     </nav>

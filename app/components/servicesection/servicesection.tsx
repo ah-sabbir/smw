@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 import "./servicesection.css"
 
@@ -33,7 +33,7 @@ const ServiceSection = () => {
         <h4>AC Maintenance & related all services</h4>
         <div>
           <div className="text_div">
-          <p>Expert AC maintenance to ensure efficient cooling and extend your system's lifespan.</p>
+          <p>Expert AC maintenance to ensure efficient cooling and extend your system&apos;s lifespan.</p>
         </div>
           <div className="button_div mt-[24px]">
             <a className="button" href="#">Learn more</a>

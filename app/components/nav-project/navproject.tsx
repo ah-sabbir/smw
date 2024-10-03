@@ -1,15 +1,16 @@
 import React from 'react'
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const NavProject = ({isHover}:any) => {
+const NavProject = () => {
 
 
   return (
     <div>
-        <ul className={`${isHover?"flex":"hidden"} dropdown-menu`} >
+        <ul className={` dropdown-menu`} >
+          {/* ${isHover?"flex":"hidden"} */}
               <li className="text_box">
                   <h3>All projects</h3>
                   <p>Showcasing our key projects that highlight our expertise</p>

@@ -13,8 +13,8 @@ const Banner = () => {
         <h1>Your <span className="text-[#0fbbf0]">Trusted</span> Partner in Electronics <span className="text-[#0fbbf0]">Maintenance</span></h1>
         <p>With expert care and proven reliability, we provide trusted maintenance and repair for all your electronics, giving you peace of mind</p>
         <div className="button_div mt-[24px]">
-            <a className="button" href="#">Contact us</a>
-            <a className="button butto_arrow" href="#"><i className="fa-solid fa-arrow-right"></i><FontAwesomeIcon icon={faArrowRight} /></a>
+            <Link className="button" href="#">Contact us</Link>
+            <Link className="button butto_arrow" href="#"><i className="fa-solid fa-arrow-right"></i><FontAwesomeIcon icon={faArrowRight} /></Link>
         </div>
         <div className="icon_box flex gap-[14px] mt-[32px]">
             <div className="icon flex items-center justify-center">

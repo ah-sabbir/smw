@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import Navbar from "@/components/navbar/navbar";
 import "./globals.css";
 
-// const geistSans = localFont({
-//   src: "../public/fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "../public/fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+const geistSans = localFont({
+  src: "../public/fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "../public/fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Super Maintenance Website",
@@ -30,7 +30,7 @@ export default function RootLayout({
       <title>Super Maintenance Website</title>
       {/* <Link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" /> */}
     </head>
-      <body>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar/>
         {children}
       </body>
